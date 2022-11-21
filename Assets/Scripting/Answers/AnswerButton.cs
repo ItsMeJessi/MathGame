@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
 
-public class AnswerButton : MonoBehaviour
+public class AnswerButton : AbstractButton
 {
     [SerializeField] private TMP_Text _label;
+
+    private GameManager GameManager;
 
     public bool isTaken;
     public bool isCorrectAnswer;
@@ -13,8 +15,17 @@ public class AnswerButton : MonoBehaviour
         isTaken = true;
     }
 
-    public void CheckAnswer()
+    protected override void Click()
     {
-        Debug.Log(isCorrectAnswer);
+        CheckAnswer();
+        base.Click();
+    }
+
+    private void CheckAnswer()
+    {
+        if (isCorrectAnswer)
+        {
+            GameManager.Instance.LoadNextEquation();
+        }
     }
 }
