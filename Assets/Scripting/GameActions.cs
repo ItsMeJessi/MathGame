@@ -8,4 +8,6 @@ public static class GameActions
 
     public static Action LockButtons;
     public static Action UnlockButtons;
+
+    public static Action<int> UpdateRoundCounter;
 }

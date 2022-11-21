@@ -33,11 +33,6 @@ public class EquationGenerator : MonoBehaviour
         GameActions.CorrectAnswer -= ShowMissingNumberOnUI;
     }
 
-    private void Start()
-    {
-        GenerateEquation();
-    }
-
     public void GenerateEquation()
     {
         GameActions.GeneratorReset?.Invoke();
