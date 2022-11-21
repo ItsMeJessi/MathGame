@@ -1724,6 +1724,7 @@ MonoBehaviour:
   - {fileID: 1868950236}
   - {fileID: 763401375}
   - {fileID: 1228958724}
+  _equationGenerator: {fileID: 160214516}
 --- !u!1 &1672918676
 GameObject:
   m_ObjectHideFlags: 0

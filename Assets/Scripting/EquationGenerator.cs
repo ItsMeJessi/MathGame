@@ -10,6 +10,9 @@ public class EquationGenerator : MonoBehaviour
     private int _missingNumber;
     private int _resultNumber;
 
+    public delegate void EquationGenerated(int missingNumberValue);
+    public event EquationGenerated EquationGeneratedEvent;
+
     private void Start()
     {
         GenerateEquation();
@@ -18,16 +21,22 @@ public class EquationGenerator : MonoBehaviour
     private void GenerateEquation()
     {
         _givenNumber = GetRandomValue();
-        _resultNumber = GetRandomValue();
+        _resultNumber = GetResultNumber();
 
         _missingNumber = _resultNumber - _givenNumber;
         
+        EquationGeneratedEvent?.Invoke(_missingNumber);
         ShowNumbersOnUI();
     }
 
     private int GetRandomValue()
     {
         return Random.Range(0, 10);
+    }
+
+    private int GetResultNumber()
+    {
+        return Random.Range(_givenNumber, 10);
     }
 
     private void ShowNumbersOnUI()
