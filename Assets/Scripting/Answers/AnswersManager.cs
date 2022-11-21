@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class AnswersManager : MonoBehaviour
@@ -15,11 +16,16 @@ public class AnswersManager : MonoBehaviour
     private void OnEnable()
     {
         _equationGenerator.EquationGeneratedEvent += SetAnswers;
+        GameActions.LockButtons += LockButtons;
+        GameActions.UnlockButtons += UnlockButtons;
     }
 
     private void OnDisable()
     {
         _equationGenerator.EquationGeneratedEvent -= SetAnswers;
+        GameActions.LockButtons -= LockButtons;
+        GameActions.UnlockButtons -= UnlockButtons;
+        
     }
     
     private void SetAnswers(int value)
@@ -74,5 +80,21 @@ public class AnswersManager : MonoBehaviour
         _availableAnswers.RemoveAt(index);
             
         button.SetButtonLabel(value);
+    }
+
+    private void LockButtons()
+    {
+        foreach (var button in _answerButtons)
+        {
+            button.GetComponent<Button>().interactable = false;
+        }
+    }
+    
+    private void UnlockButtons()
+    {
+        foreach (var button in _answerButtons)
+        {
+            button.GetComponent<Button>().interactable = true;
+        }
     }
 }

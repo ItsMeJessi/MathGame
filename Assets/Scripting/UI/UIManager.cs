@@ -19,6 +19,13 @@ public class UIManager : MonoBehaviour
 
     public void SetMissingNumberText(int value)
     {
+        _missingNumberText.color = new Color32(212, 255, 67, 255);
         _missingNumberText.text = value.ToString();
+    }
+
+    public void ResetMissingNumberToQuestionMark()
+    {
+        _missingNumberText.color = Color.white;
+        _missingNumberText.text = "?";
     }
 }
