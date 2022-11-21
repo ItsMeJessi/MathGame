@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class AnswersManager : MonoBehaviour
 {
     [SerializeField] private List<AnswerButton> _answerButtons;
+    [SerializeField] private List<Button> _buttons;
     [SerializeField] private EquationGenerator _equationGenerator;
     
     private readonly int[] _answers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -15,17 +16,26 @@ public class AnswersManager : MonoBehaviour
 
     private void OnEnable()
     {
+        BindEvents();
+    }
+
+    private void OnDisable()
+    {
+        UnbindEvents();
+    }
+
+    private void BindEvents()
+    {
         _equationGenerator.EquationGeneratedEvent += SetAnswers;
         GameActions.LockButtons += LockButtons;
         GameActions.UnlockButtons += UnlockButtons;
     }
 
-    private void OnDisable()
+    private void UnbindEvents()
     {
         _equationGenerator.EquationGeneratedEvent -= SetAnswers;
         GameActions.LockButtons -= LockButtons;
         GameActions.UnlockButtons -= UnlockButtons;
-        
     }
     
     private void SetAnswers(int value)
@@ -84,17 +94,17 @@ public class AnswersManager : MonoBehaviour
 
     private void LockButtons()
     {
-        foreach (var button in _answerButtons)
+        foreach (var button in _buttons)
         {
-            button.GetComponent<Button>().interactable = false;
+            button.interactable = false;
         }
     }
     
     private void UnlockButtons()
     {
-        foreach (var button in _answerButtons)
+        foreach (var button in _buttons)
         {
-            button.GetComponent<Button>().interactable = true;
+            button.interactable = true;
         }
     }
 }

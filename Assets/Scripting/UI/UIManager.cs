@@ -7,6 +7,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text _resultNumberText;
     [SerializeField] private TMP_Text _missingNumberText;
 
+    private static readonly Color32 GoodAnswerColor = new(212, 255, 67, 255);
+    private static readonly Color32 DefaultColor = Color.white;
+
     public void SetGivenNumberText(int value)
     {
         _givenNumberText.text = value.ToString();
@@ -19,13 +22,13 @@ public class UIManager : MonoBehaviour
 
     public void SetMissingNumberText(int value)
     {
-        _missingNumberText.color = new Color32(212, 255, 67, 255);
+        _missingNumberText.color = GoodAnswerColor;
         _missingNumberText.text = value.ToString();
     }
 
     public void ResetMissingNumberToQuestionMark()
     {
-        _missingNumberText.color = Color.white;
+        _missingNumberText.color = DefaultColor;
         _missingNumberText.text = "?";
     }
 }

@@ -11,15 +11,24 @@ public class EquationGenerator : MonoBehaviour
     private int _resultNumber;
 
     public delegate void EquationGenerated(int missingNumberValue);
-
     public event EquationGenerated EquationGeneratedEvent;
 
     private void OnEnable()
     {
-        GameActions.CorrectAnswer += ShowMissingNumberOnUI;
+        BindEvents();
     }
 
     private void OnDisable()
+    {
+        UnbindEvents();
+    }
+
+    private void BindEvents()
+    {
+        GameActions.CorrectAnswer += ShowMissingNumberOnUI;
+    }
+
+    private void UnbindEvents()
     {
         GameActions.CorrectAnswer -= ShowMissingNumberOnUI;
     }
@@ -32,13 +41,17 @@ public class EquationGenerator : MonoBehaviour
     public void GenerateEquation()
     {
         GameActions.GeneratorReset?.Invoke();
-        _givenNumber = GetRandomValue();
-        _resultNumber = GetResultNumber();
-
-        _missingNumber = _resultNumber - _givenNumber;
+        SetNumbers();
 
         EquationGeneratedEvent?.Invoke(_missingNumber);
         ShowNumbersOnUI();
+    }
+
+    private void SetNumbers()
+    {
+        _givenNumber = GetRandomValue();
+        _resultNumber = GetResultNumber();
+        _missingNumber = _resultNumber - _givenNumber;
     }
 
     private int GetRandomValue()

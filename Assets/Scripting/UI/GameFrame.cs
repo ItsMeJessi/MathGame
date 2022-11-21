@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +10,22 @@ namespace MathGame.UI
 
         private void OnEnable()
         {
+            BindEvents();
+        }
+
+        private void OnDisable()
+        {
+            UnbindEvents();
+        }
+
+        private void BindEvents()
+        {
             GameActions.CorrectAnswer += ChangeFrameForGoodAnswer;
             GameActions.WrongAnswer += ChangeFrameForWrongAnswer;
             GameActions.GeneratorReset += ResetFrame;
         }
 
-        private void OnDisable()
+        private void UnbindEvents()
         {
             GameActions.CorrectAnswer -= ChangeFrameForGoodAnswer;
             GameActions.WrongAnswer -= ChangeFrameForWrongAnswer;

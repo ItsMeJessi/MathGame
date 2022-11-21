@@ -23,14 +23,7 @@ public class AnswerButton : AbstractButton
 
     private void CheckAnswer()
     {
-        if (isCorrectAnswer)
-        {
-            StartCoroutine(ShowCorrectAnswer());
-        }
-        else
-        {
-            StartCoroutine(ShowWrongAnswer());
-        }
+        StartCoroutine(isCorrectAnswer ? ShowCorrectAnswer() : ShowWrongAnswer());
     }
 
     private IEnumerator ShowCorrectAnswer()
@@ -38,8 +31,7 @@ public class AnswerButton : AbstractButton
         GameActions.CorrectAnswer();
         GameActions.LockButtons();
         yield return new WaitForSeconds(1);
-        GameManager.Instance.LoadNextEquation();
-        GameActions.UnlockButtons();
+        LoadNextStep();
     }
 
     private IEnumerator ShowWrongAnswer()
@@ -47,6 +39,11 @@ public class AnswerButton : AbstractButton
         GameActions.WrongAnswer();
         GameActions.LockButtons();
         yield return new WaitForSeconds(1);
+        LoadNextStep();
+    }
+
+    private void LoadNextStep()
+    {
         GameManager.Instance.LoadNextEquation();
         GameActions.UnlockButtons();
     }
