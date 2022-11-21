@@ -6,6 +6,8 @@ public class AnswerButton : AbstractButton
 {
     [SerializeField] private TMP_Text _label;
 
+    private GameManager _gameManager;
+
     public bool isTaken;
     public bool isCorrectAnswer;
 
@@ -45,6 +47,10 @@ public class AnswerButton : AbstractButton
     private void LoadNextStep()
     {
         GameManager.Instance.LoadNextEquation();
-        GameActions.UnlockButtons();
+
+        if (GameManager.Instance.IsPlaying)
+        {
+            GameActions.UnlockButtons();
+        }
     }
 }

@@ -4,14 +4,16 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private EquationGenerator _equationGenerator;
+    [SerializeField] private GameObject _gameplayUI;
+    [SerializeField] private GameObject _finishPanelUI;
     
     public static GameManager Instance;
 
+    public bool IsPlaying { get; private set; }
     public int CurrentRound = 1;
     
     private int _maxRounds = 10;
-    private bool _isPlaying;
-
+    
     private void Awake()
     {
         if (Instance == null)
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetUpGame();
-        _isPlaying = true;
+        IsPlaying = true;
     }
 
     private void SetUpGame()
@@ -50,8 +52,9 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("Finished.");
-            _isPlaying = false;
-            //todo: finish panel?
+            IsPlaying = false;
+            _gameplayUI.SetActive(false);
+            _finishPanelUI.SetActive(true);
         }
     }
 
