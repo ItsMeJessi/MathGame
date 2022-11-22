@@ -10,4 +10,7 @@ public static class GameActions
     public static Action UnlockButtons;
 
     public static Action<int> UpdateRoundCounter;
+
+    public static Action AddGoodAnswerToCounter;
+    public static Action AddWrongAnswerToCounter;
 }

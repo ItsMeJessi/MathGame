@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
-public class AbstractButton : MonoBehaviour
-{
+public abstract class AbstractButton : MonoBehaviour
+ {
     private Button _button;
 
     private void Awake()

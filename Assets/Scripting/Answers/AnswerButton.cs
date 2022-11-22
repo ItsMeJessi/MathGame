@@ -32,6 +32,7 @@ public class AnswerButton : AbstractButton
     {
         GameActions.CorrectAnswer();
         GameActions.LockButtons();
+        GameActions.AddGoodAnswerToCounter();
         yield return new WaitForSeconds(1);
         LoadNextStep();
     }
@@ -40,6 +41,7 @@ public class AnswerButton : AbstractButton
     {
         GameActions.WrongAnswer();
         GameActions.LockButtons();
+        GameActions.AddWrongAnswerToCounter();
         yield return new WaitForSeconds(1);
         LoadNextStep();
     }
