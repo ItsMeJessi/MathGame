@@ -8,6 +8,8 @@ public class Prompt : MonoBehaviour
     [SerializeField] private AbstractButton _confirmButton;
     [SerializeField] private AbstractButton _denyButton;
 
+    [SerializeField] private GameObject _gameplayUI;
+
     public delegate void ConfirmCallback();
 
     public event ConfirmCallback ConfirmCallbackEvent;
@@ -27,11 +29,13 @@ public class Prompt : MonoBehaviour
 
     private void Show()
     {
+        _gameplayUI.SetActive(false);
         gameObject.SetActive(true);
     }
 
-    private void Hide()
+    public void Hide()
     {
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); 
+        _gameplayUI.SetActive(true);
     }
 }
