@@ -12,12 +12,12 @@ public abstract class AbstractButton : MonoBehaviour
         _button = GetComponent<Button>();
     }
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         _button.onClick.AddListener(Click);
     }
-
-    private void OnDisable()
+    
+    protected virtual void OnDisable()
     {
         _button.onClick.RemoveAllListeners();
     }
@@ -25,5 +25,15 @@ public abstract class AbstractButton : MonoBehaviour
     protected virtual void Click()
     {
         //Todo: play click sound
+    }
+
+    protected void LockButton()
+    {
+        _button.interactable = false;
+    }
+
+    protected void UnlockButton()
+    {
+        _button.interactable = true;
     }
 }

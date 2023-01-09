@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 36212050}
   - component: {fileID: 36212049}
   - component: {fileID: 36212052}
+  - component: {fileID: 36212053}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -431,6 +432,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentPanel: {fileID: 1338711825}
   _panelToOpen: {fileID: 1953298214}
+--- !u!114 &36212053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36212047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de88763ae664594dab98847a0b00593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &69344476
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +2826,7 @@ GameObject:
   - component: {fileID: 877165564}
   - component: {fileID: 877165563}
   - component: {fileID: 877165566}
+  - component: {fileID: 877165567}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -2936,6 +2950,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: {fileID: 726884317}
   _promptText: "Czy na pewno chcesz zako\u0144czy\u0107 ten poziom?"
+--- !u!114 &877165567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877165561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de88763ae664594dab98847a0b00593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &962693149
 GameObject:
   m_ObjectHideFlags: 0
