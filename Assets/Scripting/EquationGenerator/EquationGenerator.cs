@@ -1,14 +1,15 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EquationGenerator : MonoBehaviour
+public abstract class EquationGenerator : MonoBehaviour
 {
     [SerializeField] private UIManager _uiManager;
+    [SerializeField] protected int _minValue = 1;
+    [SerializeField] protected int _maxValue = 10;
 
-    private int _givenNumber;
-    private int _missingNumber;
-    private int _resultNumber;
+    protected int _givenNumber;
+    protected int _missingNumber;
+    protected int _resultNumber;
 
     public delegate void EquationGenerated(int missingNumberValue);
     public event EquationGenerated EquationGeneratedEvent;
@@ -42,21 +43,20 @@ public class EquationGenerator : MonoBehaviour
         ShowNumbersOnUI();
     }
 
-    private void SetNumbers()
+    protected virtual void SetNumbers()
     {
         _givenNumber = GetRandomValue();
         _resultNumber = GetResultNumber();
-        _missingNumber = _resultNumber - _givenNumber;
     }
 
     private int GetRandomValue()
     {
-        return Random.Range(1, 10);
+        return Random.Range(_minValue, _maxValue);
     }
 
-    private int GetResultNumber()
+    protected virtual int GetResultNumber()
     {
-        return Random.Range(_givenNumber + 1, 10);
+        return Random.Range(_givenNumber + 1, _maxValue);
     }
 
     private void ShowNumbersOnUI()

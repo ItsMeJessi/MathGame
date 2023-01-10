@@ -769,7 +769,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 160214515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0eec6286e4f9944aa216157b95cf4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ba271cdf0865254898e3315fdc47b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _uiManager: {fileID: 1283640252}
@@ -4233,7 +4233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +
+  m_text: '-'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fda8c5b08d153074983e233719238cb3, type: 2}
   m_sharedMaterial: {fileID: -4283173898608254156, guid: fda8c5b08d153074983e233719238cb3, type: 2}
