@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 public static class GameActions
 {
@@ -13,4 +14,9 @@ public static class GameActions
 
     public static Action AddGoodAnswerToCounter;
     public static Action AddWrongAnswerToCounter;
+}
+
+public static class AudioActions
+{
+    public static Action<AudioClip> PlaySound;
 }

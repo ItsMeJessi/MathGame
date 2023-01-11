@@ -5,11 +5,12 @@ public class ExitToMenuButton : AbstractButton
 {
     [SerializeField] private Prompt _prompt;
     [SerializeField] private string _promptText;
+    [SerializeField] private AudioClip _audioClip;
     
     protected override void Click()
     {
         ShowPrompt();
-        base.Click();
+        AudioActions.PlaySound(_audioClip);
     }
 
     private void ShowPrompt()

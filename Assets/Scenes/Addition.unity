@@ -432,6 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentPanel: {fileID: 1338711825}
   _panelToOpen: {fileID: 1953298214}
+  _clickSound: {fileID: 8300000, guid: 50e5d54a69d6b4543a016c665e9f12c6, type: 3}
 --- !u!114 &36212053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,6 +2127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0819f2cee71d0146847c741177eb3c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: ff780cd11fc2719488e67db9d580b407, type: 3}
 --- !u!1 &726884314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,6 +2817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Menu
+  _audioClip: {fileID: 0}
 --- !u!1 &877165561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prompt: {fileID: 726884317}
   _promptText: "Czy na pewno chcesz zako\u0144czy\u0107 ten poziom?"
+  _audioClip: {fileID: 8300000, guid: 028da1dc76fc74a9881aa389a9f19e60, type: 3}
 --- !u!114 &877165567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,6 +3280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0819f2cee71d0146847c741177eb3c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 50e5d54a69d6b4543a016c665e9f12c6, type: 3}
 --- !u!1 &1006508220
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,6 +5160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentPanel: {fileID: 1953298214}
   _panelToOpen: {fileID: 1338711825}
+  _clickSound: {fileID: 8300000, guid: 028da1dc76fc74a9881aa389a9f19e60, type: 3}
 --- !u!1 &1730200881
 GameObject:
   m_ObjectHideFlags: 0

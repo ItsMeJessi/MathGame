@@ -24,7 +24,7 @@ public abstract class AbstractButton : MonoBehaviour
 
     protected virtual void Click()
     {
-        //Todo: play click sound
+        
     }
 
     protected void LockButton()
