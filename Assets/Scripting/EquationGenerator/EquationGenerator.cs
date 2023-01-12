@@ -4,8 +4,10 @@ using Random = UnityEngine.Random;
 public abstract class EquationGenerator : MonoBehaviour
 {
     [SerializeField] private UIManager _uiManager;
-    [SerializeField] protected int _minValue = 1;
-    [SerializeField] protected int _maxValue = 10;
+    [SerializeField] private CurrentGameConfig _currentGameConfig;
+    
+    protected int _minValue = 1;
+    protected int _maxValue = 10;
 
     protected int _givenNumber;
     protected int _missingNumber;
@@ -13,6 +15,12 @@ public abstract class EquationGenerator : MonoBehaviour
 
     public delegate void EquationGenerated(int missingNumberValue);
     public event EquationGenerated EquationGeneratedEvent;
+
+    private void Awake()
+    {
+        _minValue = _currentGameConfig.CurrentDifficultyLevel.MinValue;
+        _maxValue = _currentGameConfig.CurrentDifficultyLevel.MaxValue;
+    }
 
     private void OnEnable()
     {
