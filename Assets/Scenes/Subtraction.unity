@@ -252,8 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiManager: {fileID: 1718340035}
-  _minValue: 1
-  _maxValue: 10
+  _currentGameConfig: {fileID: 11400000, guid: af3f9ce2bb8e0a248b74575c91271cba, type: 2}
 --- !u!1 &536024252
 GameObject:
   m_ObjectHideFlags: 0

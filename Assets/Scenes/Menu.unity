@@ -760,11 +760,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833194391}
   m_CullTransparentMesh: 1
---- !u!1 &876286448 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5570348223898499488, guid: ee3d212ce0ed44b4088ea68a416d0f9a, type: 3}
-  m_PrefabInstance: {fileID: 5670528588740152493}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003415446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,11 +1091,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193578138}
   m_CullTransparentMesh: 1
---- !u!1 &1451199996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8068380958008315765, guid: b6257d01c895b9a41a3958406c2cb3f9, type: 3}
-  m_PrefabInstance: {fileID: 7477723799431855697}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1451762950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +1910,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Subtraction
       objectReference: {fileID: 0}
-    - target: {fileID: 7560175028203490699, guid: 76221a66ce42ce342bb072107c639404, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2048,20 +2038,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7615713656811055149, guid: ee3d212ce0ed44b4088ea68a416d0f9a, type: 3}
   m_PrefabInstance: {fileID: 5670528588740152493}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5670528588740152498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876286448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49bd00a5470c796468e28f8c6b365f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneName: Addition
-  _audioClip: {fileID: 8300000, guid: 50e5d54a69d6b4543a016c665e9f12c6, type: 3}
 --- !u!1001 &7440656356020021928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,7 +2046,7 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1951924091}
     m_Modifications:
-    - target: {fileID: 284789890712791636, guid: 35e9f58fe59cd644ebac77df758d8c93, type: 3}
+    - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2322,20 +2298,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5405740884014554872, guid: b6257d01c895b9a41a3958406c2cb3f9, type: 3}
   m_PrefabInstance: {fileID: 7477723799431855697}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7477723799431855703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451199996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49bd00a5470c796468e28f8c6b365f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneName: Addition
-  _audioClip: {fileID: 8300000, guid: 50e5d54a69d6b4543a016c665e9f12c6, type: 3}
 --- !u!1001 &7523974823850838081
 PrefabInstance:
   m_ObjectHideFlags: 0
