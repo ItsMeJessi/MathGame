@@ -6,6 +6,9 @@ public class AnswerButton : AbstractButton
 {
     [SerializeField] private TMP_Text _label;
 
+    [SerializeField] private AudioClip _correctAnswerSound;
+    [SerializeField] private AudioClip _wrongAnswerSound;
+
     private GameManager _gameManager;
 
     public bool isTaken;
@@ -20,7 +23,12 @@ public class AnswerButton : AbstractButton
     protected override void Click()
     {
         CheckAnswer();
-        base.Click();
+        PlaySound();
+    }
+
+    private void PlaySound()
+    {
+        AudioActions.PlaySound(isCorrectAnswer ? _correctAnswerSound : _wrongAnswerSound);
     }
 
     private void CheckAnswer()

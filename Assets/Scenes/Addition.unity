@@ -3598,6 +3598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _goodAnswersText: {fileID: 1905643663}
   _wrongAnswersText: {fileID: 856225011}
+  _finishedGameSound: {fileID: 8300000, guid: 09f7ee07b81774e2ea9e35333571d914, type: 3}
 --- !u!1001 &1228958722
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -271,5 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: {fileID: 7707601727312568436}
+  _correctAnswerSound: {fileID: 8300000, guid: d43121952cf8709498b15329720a33f1, type: 3}
+  _wrongAnswerSound: {fileID: 8300000, guid: 866bd6344d016d349a376383d78b6745, type: 3}
   isTaken: 0
   isCorrectAnswer: 0
