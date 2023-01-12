@@ -40,6 +40,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3414908137569149886, guid: 38c40164f9b6eaa41a42752eef5bb50c, type: 3}
+      propertyPath: _gameMode
+      value: Addition
+      objectReference: {fileID: 0}
     - target: {fileID: 3738057026089880663, guid: 38c40164f9b6eaa41a42752eef5bb50c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

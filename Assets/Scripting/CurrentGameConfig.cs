@@ -4,4 +4,5 @@ using UnityEngine;
 public class CurrentGameConfig : ScriptableObject
 {
     public DifficultyLevel CurrentDifficultyLevel;
+    public string GameMode;
 }
