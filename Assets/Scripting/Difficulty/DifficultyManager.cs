@@ -3,14 +3,20 @@ using UnityEngine;
 
 public class DifficultyManager : MonoBehaviour
 {
-    [SerializeField] private DifficultyLevel _easy;
-    [SerializeField] private DifficultyLevel _medium;
-    [SerializeField] private DifficultyLevel _hard;
-    
     [SerializeField] private CurrentGameConfig _currentGameConfig;
 
-    private void Awake()
+    private void OnEnable()
     {
-        _currentGameConfig.CurrentDifficultyLevel = _medium;
+        GameActions.SetDifficultyLevel += UstawPoziomTrudnosci;
+    }
+
+    private void OnDisable()
+    {
+        GameActions.SetDifficultyLevel -= UstawPoziomTrudnosci;
+    }
+
+    private void UstawPoziomTrudnosci(DifficultyLevel difficultyLevel)
+    {
+        _currentGameConfig.CurrentDifficultyLevel = difficultyLevel;
     }
 }

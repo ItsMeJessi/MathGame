@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.51608133
       objectReference: {fileID: 0}
+    - target: {fileID: 3818007496581795828, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: _difficultyLevel
+      value: 
+      objectReference: {fileID: 11400000, guid: a53b07c6aff435c4fbd6ad25b239dd84, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
