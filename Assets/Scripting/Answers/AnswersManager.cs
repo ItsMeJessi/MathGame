@@ -9,8 +9,6 @@ public class AnswersManager : MonoBehaviour
     [SerializeField] private List<AnswerButton> _answerButtons;
     [SerializeField] private List<Button> _buttons;
     [SerializeField] private EquationGenerator _equationGenerator;
-    
-    private readonly int[] _answers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
     private List<int> _availableAnswers;
 
@@ -40,7 +38,12 @@ public class AnswersManager : MonoBehaviour
     
     private void SetAnswers(int value)
     {
-        _availableAnswers = new List<int>(_answers);
+        _availableAnswers = new List<int>();
+
+        for (var i = 0; i <= _equationGenerator.CurrentGameConfig.CurrentDifficultyLevel.MaxValue; i++)
+        {
+            _availableAnswers.Add(i);
+        }
         
         ResetButtons();
         SetCorrectAnswerButton(value);

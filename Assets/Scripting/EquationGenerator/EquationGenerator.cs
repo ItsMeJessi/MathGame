@@ -5,6 +5,8 @@ public abstract class EquationGenerator : MonoBehaviour
 {
     [SerializeField] private UIManager _uiManager;
     [SerializeField] private CurrentGameConfig _currentGameConfig;
+
+    public CurrentGameConfig CurrentGameConfig => _currentGameConfig;
     
     protected int _minValue = 1;
     protected int _maxValue = 10;
