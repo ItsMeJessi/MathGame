@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DifficultyButton : AbstractButton
 {
-    [SerializeField] private DifficultyLevel _difficultyLevel;
+    [SerializeField] private int _difficultyLevelIndex;
 
     protected override void Click()
     {
-        GameActions.SetDifficultyLevel(_difficultyLevel);
+        GameActions.SetDifficultyLevel(_difficultyLevelIndex);
     }
 }

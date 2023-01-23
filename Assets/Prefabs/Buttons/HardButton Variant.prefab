@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: _difficultyLevel
       value: 
       objectReference: {fileID: 11400000, guid: a27794e9a8919bd4095d93cd3ad18b3f, type: 2}
+    - target: {fileID: 3818007496581795828, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: _difficultyLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: a42dab3e5df65e34589b9e452168608d, type: 3}

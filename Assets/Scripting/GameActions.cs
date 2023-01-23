@@ -15,7 +15,7 @@ public static class GameActions
     public static Action AddGoodAnswerToCounter;
     public static Action AddWrongAnswerToCounter;
 
-    public static Action<DifficultyLevel> SetDifficultyLevel;
+    public static Action<int> SetDifficultyLevel;
 }
 
 public static class AudioActions

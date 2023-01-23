@@ -791,6 +791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentGameConfig: {fileID: 11400000, guid: af3f9ce2bb8e0a248b74575c91271cba, type: 2}
+  _difficultyData: {fileID: 11400000, guid: 8abb9407715de114eb8ace5f9c6e7fc8, type: 2}
 --- !u!4 &1003415448
 Transform:
   m_ObjectHideFlags: 0
@@ -1467,7 +1468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 91.8, y: 35.5}
+  m_AnchoredPosition: {x: 91.80005, y: 35.5}
   m_SizeDelta: {x: 129.16, y: 33.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988169251
@@ -1490,7 +1491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wersja 0.0.6
+  m_text: Wersja 0.0.7
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2008,7 +2009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108761486100354314, guid: 76221a66ce42ce342bb072107c639404, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 624.64514
+      value: 509.6001
       objectReference: {fileID: 0}
     - target: {fileID: 2108761486100354314, guid: 76221a66ce42ce342bb072107c639404, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2280,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2032662889032080131, guid: 35e9f58fe59cd644ebac77df758d8c93, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 394.55505
+      value: 279.51013
       objectReference: {fileID: 0}
     - target: {fileID: 2032662889032080131, guid: 35e9f58fe59cd644ebac77df758d8c93, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2460,7 +2461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6256171490714690986, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6714903625526057109, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2478,6 +2479,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -105.28999
       objectReference: {fileID: 0}
+    - target: {fileID: 7125384997946157158, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
+      propertyPath: _panelToOpen
+      value: 
+      objectReference: {fileID: 323702925}
+    - target: {fileID: 7125384997946157158, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
+      propertyPath: _currentPanel
+      value: 
+      objectReference: {fileID: 1193578138}
     - target: {fileID: 8246966600428020271, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2544,7 +2553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8246966600428020271, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 624.64514
+      value: 739.6901
       objectReference: {fileID: 0}
     - target: {fileID: 8246966600428020271, guid: 329cfdf0e24eca446b9ec4eed3961fb6, type: 3}
       propertyPath: m_AnchoredPosition.y

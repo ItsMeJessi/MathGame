@@ -1,22 +1,35 @@
-using System;
 using UnityEngine;
 
 public class DifficultyManager : MonoBehaviour
 {
     [SerializeField] private CurrentGameConfig _currentGameConfig;
+    [SerializeField] private DifficultyData _difficultyData;
 
     private void OnEnable()
     {
-        GameActions.SetDifficultyLevel += UstawPoziomTrudnosci;
+        GameActions.SetDifficultyLevel += SetDifficultyLevel;
     }
 
     private void OnDisable()
     {
-        GameActions.SetDifficultyLevel -= UstawPoziomTrudnosci;
+        GameActions.SetDifficultyLevel -= SetDifficultyLevel;
     }
 
-    private void UstawPoziomTrudnosci(DifficultyLevel difficultyLevel)
+    private void SetDifficultyLevel(int difficultyLevelIndex)
     {
-        _currentGameConfig.CurrentDifficultyLevel = difficultyLevel;
+        _currentGameConfig.CurrentDifficultyLevel = GetDifficultyLevelFromData(difficultyLevelIndex);
+    }
+
+    private DifficultyLevel GetDifficultyLevelFromData(int difficultyLeveLIndex)
+    {
+        var difficultyLevel = _currentGameConfig.GameMode switch
+        {
+            "Addition" => _difficultyData.AdditionLevels[difficultyLeveLIndex],
+            "Subtraction" => _difficultyData.SubtractionLevels[difficultyLeveLIndex],
+            "Multiplication" => _difficultyData.MultiplicationLevels[difficultyLeveLIndex],
+            _ => _difficultyData.AdditionLevels[difficultyLeveLIndex]
+        };
+
+        return difficultyLevel;
     }
 }
