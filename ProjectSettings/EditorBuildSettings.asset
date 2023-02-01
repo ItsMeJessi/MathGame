@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Subtraction.unity
     guid: a2c110595f77fab448ee15e24146c1f1
+  - enabled: 1
+    path: Assets/Scenes/Multiplication.unity
+    guid: b154b892b170a5a44aa875acc9ba2e79
   m_configObjects: {}
