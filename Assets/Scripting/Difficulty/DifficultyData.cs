@@ -3,13 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Data/Difficulty")]
 public class DifficultyData : ScriptableObject
 {
-    [SerializeField] private DifficultyLevel[] _additionLevels;
-    [SerializeField] private DifficultyLevel[] _substractionLevels;
-    [SerializeField] private DifficultyLevel[] _multiplicationLevels;
-    [SerializeField] private DifficultyLevel[] _divisionLevels;
-
-    public DifficultyLevel[] AdditionLevels => _additionLevels;
-    public DifficultyLevel[] SubtractionLevels => _substractionLevels;
-    public DifficultyLevel[] MultiplicationLevels => _multiplicationLevels;
-    public DifficultyLevel[] DivisionLevels => _divisionLevels;
+    [field: SerializeField] public DifficultyLevel[] AdditionLevels { get; private set; }
+    [field: SerializeField] public DifficultyLevel[] SubtractionLevels { get; private set; }
+    [field: SerializeField] public DifficultyLevel[] MultiplicationLevels { get; private set; }
+    [field: SerializeField] public DifficultyLevel[] DivisionLevels { get; private set; }
 }
