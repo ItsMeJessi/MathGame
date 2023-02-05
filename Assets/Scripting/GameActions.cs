@@ -21,4 +21,5 @@ public static class GameActions
 public static class AudioActions
 {
     public static Action<AudioClip> PlaySound;
+    public static Action<AudioClip> ChangeMusic;
 }

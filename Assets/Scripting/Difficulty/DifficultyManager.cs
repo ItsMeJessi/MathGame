@@ -27,6 +27,7 @@ public class DifficultyManager : MonoBehaviour
             "Addition" => _difficultyData.AdditionLevels[difficultyLeveLIndex],
             "Subtraction" => _difficultyData.SubtractionLevels[difficultyLeveLIndex],
             "Multiplication" => _difficultyData.MultiplicationLevels[difficultyLeveLIndex],
+            "Division" => _difficultyData.DivisionLevels[difficultyLeveLIndex],
             _ => _difficultyData.AdditionLevels[difficultyLeveLIndex]
         };
 

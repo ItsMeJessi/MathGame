@@ -2603,6 +2603,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1951924091}
     m_Modifications:
+    - target: {fileID: 341455431526402517, guid: 8c8e6d3568a3f5b4a9e17e4318c15a41, type: 3}
+      propertyPath: _panelToOpen
+      value: 
+      objectReference: {fileID: 323702925}
+    - target: {fileID: 341455431526402517, guid: 8c8e6d3568a3f5b4a9e17e4318c15a41, type: 3}
+      propertyPath: _currentPanel
+      value: 
+      objectReference: {fileID: 1193578138}
     - target: {fileID: 1367237920152304566, guid: 8c8e6d3568a3f5b4a9e17e4318c15a41, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -2713,7 +2721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3498459985644454937, guid: 8c8e6d3568a3f5b4a9e17e4318c15a41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4282717935602940198, guid: 8c8e6d3568a3f5b4a9e17e4318c15a41, type: 3}
       propertyPath: m_AnchorMax.y

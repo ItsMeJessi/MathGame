@@ -25,6 +25,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb3b14af1139c454195faf9b19dba202, type: 2}
   - {fileID: 11400000, guid: 02b336b52926262499b1ae576f9f4f4c, type: 2}
   _divisionLevels:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7d31579d5df984a68aea2e25402ef0e0, type: 2}
+  - {fileID: 11400000, guid: 0b508fb7f24e04646a9b24cae72c7df3, type: 2}
+  - {fileID: 11400000, guid: d30112809c77d4f03826a49a6eeabe6b, type: 2}

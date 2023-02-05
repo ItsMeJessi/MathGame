@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Multiplication.unity
     guid: b154b892b170a5a44aa875acc9ba2e79
+  - enabled: 1
+    path: Assets/Scenes/Division.unity
+    guid: 7e27062a17fde47c69a76ccd67405b6a
   m_configObjects: {}

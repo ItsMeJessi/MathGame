@@ -11,4 +11,5 @@ public class DifficultyData : ScriptableObject
     public DifficultyLevel[] AdditionLevels => _additionLevels;
     public DifficultyLevel[] SubtractionLevels => _substractionLevels;
     public DifficultyLevel[] MultiplicationLevels => _multiplicationLevels;
+    public DifficultyLevel[] DivisionLevels => _divisionLevels;
 }
