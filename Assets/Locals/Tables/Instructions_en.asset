@@ -40,6 +40,16 @@ MonoBehaviour:
     m_Localized: Subtraction
     m_Metadata:
       m_Items: []
+  - m_Id: 3926695866368
+    m_Localized: 'You''re going to finish this level.
+
+      Are you sure?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643624054784
+    m_Localized: Level complete!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

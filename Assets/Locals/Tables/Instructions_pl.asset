@@ -39,6 +39,14 @@ MonoBehaviour:
     m_Localized: Dodawanie
     m_Metadata:
       m_Items: []
+  - m_Id: 3926695866368
+    m_Localized: "Zamierzasz zako\u0144czy\u0107 poziom.\nJeste\u015B pewien?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643624054784
+    m_Localized: "Poziom uko\u0144czony!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

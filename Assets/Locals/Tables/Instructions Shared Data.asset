@@ -35,6 +35,14 @@ MonoBehaviour:
     m_Key: Subtraction
     m_Metadata:
       m_Items: []
+  - m_Id: 3926695866368
+    m_Key: AreYouSureToFinish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4643624054784
+    m_Key: LevelComplete
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
