@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Buttons_en
+  m_Name: Labels_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 3c3c72f91b774c742bc7b22744225563, type: 2}
+  m_SharedData: {fileID: 11400000, guid: f68a1397bb6fed446b16d09fb58c0534, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 124525735936
-    m_Localized: Play
+  - m_Id: 6711930880
+    m_Localized: Settings
     m_Metadata:
       m_Items: []
-  - m_Id: 171027984384
-    m_Localized: Yes
+  - m_Id: 51599372288
+    m_Localized: Music
     m_Metadata:
       m_Items: []
-  - m_Id: 193513648128
-    m_Localized: No
+  - m_Id: 91323625472
+    m_Localized: Sound effects
     m_Metadata:
       m_Items: []
-  - m_Id: 9359049355264
-    m_Localized: Try again
+  - m_Id: 436913303552
+    m_Localized: 'Good answers:'
     m_Metadata:
       m_Items: []
-  - m_Id: 9490448510976
-    m_Localized: Back to menu
+  - m_Id: 485122633728
+    m_Localized: 'Wrong answers:'
     m_Metadata:
       m_Items: []
   references:

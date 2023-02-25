@@ -10,39 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Buttons Shared Data
+  m_Name: Labels Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Buttons
-  m_TableCollectionNameGuidString: 3c3c72f91b774c742bc7b22744225563
+  m_TableCollectionName: Labels
+  m_TableCollectionNameGuidString: f68a1397bb6fed446b16d09fb58c0534
   m_Entries:
-  - m_Id: 124525735936
-    m_Key: Play
+  - m_Id: 6711930880
+    m_Key: Settings
     m_Metadata:
       m_Items: []
-  - m_Id: 171027984384
-    m_Key: Yes
+  - m_Id: 51599372288
+    m_Key: Music
     m_Metadata:
       m_Items: []
-  - m_Id: 193513648128
-    m_Key: No
+  - m_Id: 91323625472
+    m_Key: Sfx
     m_Metadata:
       m_Items: []
-  - m_Id: 9359049355264
-    m_Key: TryAgain
+  - m_Id: 436913303552
+    m_Key: GoodAnswers
     m_Metadata:
       m_Items: []
-  - m_Id: 9490448510976
-    m_Key: BackToMenu
+  - m_Id: 485122633728
+    m_Key: WrongAnswers
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 6096914599668088889
+    rid: 6096914599668088913
   references:
     version: 2
     RefIds:
-    - rid: 6096914599668088889
+    - rid: 6096914599668088913
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1677328613316
+        m_CustomEpoch: 1677330790947

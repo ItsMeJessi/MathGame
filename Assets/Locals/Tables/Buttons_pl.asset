@@ -30,6 +30,14 @@ MonoBehaviour:
     m_Localized: Nie
     m_Metadata:
       m_Items: []
+  - m_Id: 9359049355264
+    m_Localized: Zagraj ponownie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9490448510976
+    m_Localized: "Wr\xF3\u0107 do menu"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
