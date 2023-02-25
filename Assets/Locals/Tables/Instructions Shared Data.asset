@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Instructions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Instructions
+  m_TableCollectionNameGuidString: 0765da0d6e1a6944984c6412ec72f9fc
+  m_Entries:
+  - m_Id: 2008443514880
+    m_Key: MainInstruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2314703204352
+    m_Key: Addition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2333120393216
+    m_Key: Division
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2346298896384
+    m_Key: Multiplication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2361750712320
+    m_Key: Subtraction
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6096914599668088890
+  references:
+    version: 2
+    RefIds:
+    - rid: 6096914599668088890
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1677328623732

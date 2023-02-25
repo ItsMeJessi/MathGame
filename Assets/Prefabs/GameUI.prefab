@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: 5594074070933648672}
   - component: {fileID: 5594074070933648674}
   - component: {fileID: 5594074070933648675}
+  - component: {fileID: 8578547960140798406}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -876,6 +877,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8578547960140798406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5594074070933648673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:0765da0d6e1a6944984c6412ec72f9fc
+    m_TableEntryReference:
+      m_KeyId: 2008443514880
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5594074070933648675}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &5594074070962541287
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +950,7 @@ RectTransform:
   m_Children:
   - {fileID: 5594074072331747990}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2116,7 +2157,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 299.3, y: 329.38}
+  m_SizeDelta: {x: 0, y: 329.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074071332923833
 CanvasRenderer:
@@ -2251,7 +2292,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 223.68, y: 329.38}
+  m_SizeDelta: {x: 0, y: 329.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074071436471973
 CanvasRenderer:
@@ -2386,7 +2427,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 121.71, y: 154.46}
+  m_SizeDelta: {x: 0, y: 154.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074071464677118
 CanvasRenderer:
@@ -2656,7 +2697,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 223.68, y: 329.38}
+  m_SizeDelta: {x: 0, y: 329.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074071468537993
 CanvasRenderer:
@@ -4859,7 +4900,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 121.71, y: 154.46}
+  m_SizeDelta: {x: 0, y: 154.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074072520693643
 CanvasRenderer:
