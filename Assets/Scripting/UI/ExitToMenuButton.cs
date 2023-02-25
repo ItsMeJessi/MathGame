@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 
 public class ExitToMenuButton : AbstractButton
 {
     [SerializeField] private Prompt _prompt;
-    [SerializeField] private string _promptText;
+    [SerializeField] private LocalizedString _promptText;
     [SerializeField] private AudioClip _audioClip;
     
     protected override void Click()
@@ -15,7 +16,7 @@ public class ExitToMenuButton : AbstractButton
 
     private void ShowPrompt()
     {
-        _prompt.SetPrompt(_promptText, LoadMenuScene, DenyCallback);
+        _prompt.SetPrompt(_promptText.GetLocalizedString(), LoadMenuScene, DenyCallback);
     }
 
     private void DenyCallback()
