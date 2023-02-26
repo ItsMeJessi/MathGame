@@ -1,11 +1,15 @@
-using System;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingsUI : MonoBehaviour
 {
     [SerializeField] private Slider _musicSlider;
     [SerializeField] private Slider _sfxSlider;
+
+    [SerializeField] private AudioMixer _musicMixer;
+    [SerializeField] private AudioMixer _sfxMixer;
 
     private void OnEnable()
     {
@@ -20,11 +24,11 @@ public class SettingsUI : MonoBehaviour
 
     private void SetMusicValue()
     {
-        //todo: audio level set to value
+        _musicMixer.SetFloat("MusicVolume", math.log10(_musicSlider.value) * 20);
     }
 
     private void SetSfxValue()
     {
-        //todo: sfx level set to value
+        _sfxMixer.SetFloat("SfxVolume", math.log10(_sfxSlider.value) * 20);
     }
 }

@@ -1990,7 +1990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5594074071217521789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1998,17 +1998,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5594074071217521762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5594074072385803839}
+  m_Father: {fileID: 5594074072331747990}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 949, y: 379}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -123, y: -111}
   m_SizeDelta: {x: 145, y: 139.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5594074071217521790
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 5594074071855208516}
   m_HandleRect: {fileID: 5594074071846224291}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.66
@@ -3726,7 +3726,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 5594074072093473741}
   m_HandleRect: {fileID: 5594074070632049450}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -4010,6 +4010,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicSlider: {fileID: 5594074071656539309}
   _sfxSlider: {fileID: 5594074071741062659}
+  _musicMixer: {fileID: 24100000, guid: 16570f013557d5248b1ab19f8c778680, type: 2}
+  _sfxMixer: {fileID: 24100000, guid: e60844fe125fb8348a51626480645cb5, type: 2}
 --- !u!1 &5594074071948328867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4737,6 +4739,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5594074072484090750}
+  - {fileID: 5594074071217521789}
   - {fileID: 5594074071692177582}
   m_Father: {fileID: 5594074070962541283}
   m_RootOrder: -1
@@ -4942,7 +4945,6 @@ RectTransform:
   - {fileID: 5594074072705502635}
   - {fileID: 5594074071704570911}
   - {fileID: 5594074070850482903}
-  - {fileID: 5594074071217521789}
   m_Father: {fileID: 5594074071692177582}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
