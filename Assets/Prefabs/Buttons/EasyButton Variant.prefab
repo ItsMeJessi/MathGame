@@ -5,7 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 315181133932744459, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u0141ATWY"
       objectReference: {fileID: 0}
+    - target: {fileID: 413422780742922752, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4283173898608254156, guid: fda8c5b08d153074983e233719238cb3, type: 2}
     - target: {fileID: 2351466799781224070, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -101,19 +105,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f342eca5cd9642ca9ef292cde40ebcf, type: 3}
+    - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.32941177
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.79215693
       objectReference: {fileID: 0}
     - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: m_Color.r
-      value: 0.51608133
+      value: 0.5137255
       objectReference: {fileID: 0}
     - target: {fileID: 3818007496581795828, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: _difficultyLevel
       value: 
       objectReference: {fileID: 11400000, guid: a53b07c6aff435c4fbd6ad25b239dd84, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1850748588079248062, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2396896455479479792}
   m_SourcePrefab: {fileID: 100100000, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
 --- !u!114 &5525530213904647339 stripped
 MonoBehaviour:

@@ -5,7 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 315181133932744459, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
@@ -109,12 +109,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f342eca5cd9642ca9ef292cde40ebcf, type: 3}
+    - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: m_Color.b
-      value: 0.107547104
+      value: 0.37254903
       objectReference: {fileID: 0}
     - target: {fileID: 3646584211471600766, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: m_Color.g
-      value: 0.57586735
+      value: 0.854902
       objectReference: {fileID: 0}
     - target: {fileID: 3818007496581795828, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
       propertyPath: _difficultyLevel
@@ -125,7 +129,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1850748588079248062, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5680275177661580007}
   m_SourcePrefab: {fileID: 100100000, guid: a42dab3e5df65e34589b9e452168608d, type: 3}
 --- !u!114 &7934181449775166078 stripped
 MonoBehaviour:
