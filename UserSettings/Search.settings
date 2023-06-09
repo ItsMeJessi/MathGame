@@ -8,6 +8,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.E8DA1663" = "loca"
+	"OpenInspectorPreview.E8DA1663" = "0"
+	"currentGroup.E8DA1663" = "all"
 }
 providers = {
 	at = {
